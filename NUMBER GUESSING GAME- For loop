@@ -1,0 +1,15 @@
+import random
+num = random.randint(1,10)
+print(num)
+for index in range(1,4):
+    var = index 
+    guess = int(input("There are only 3 chances. Guess a number from 1 to 10: "))
+    if guess == num:
+        print("You guessed it correctly!")
+        break
+    if index == 3 and guess != num:
+        print("wrong answer! the number is: ", num, "\nplay again! your 3 chances has been used up")
+    elif guess < num:
+        print("your guess was smaller than the actual number!. This is your", var, "attempt")
+    elif guess > num:
+        print("Your guess was greater than the actual number!. This is your", var, "attempt")
